@@ -32,7 +32,7 @@
 <style lang="scss">
 	.markup-container {
 		width: 100%;
-		max-width: 1000px;
+		max-width: 640px;
 		padding-left: var(--gap);
 		padding-right: var(--gap);
 		margin-left: auto;

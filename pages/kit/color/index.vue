@@ -9,9 +9,9 @@
 				:key="index"
 			>
 				<GridCol
+					class="page-kit-color__col"
 					v-for="value in group"
 					:key="value.name"
-					:col="7"
 				>
 					<LocalItem
 						:name="value.name"
@@ -102,6 +102,16 @@
 							code: '#21A342',
 						},
 					],
+					[
+						{
+							name: 'main-blue',
+							code: '#273270',
+						},
+						{
+							name: 'dark-blue',
+							code: '#1D254F',
+						},
+					],
 				],
 			}
 		},
@@ -113,12 +123,14 @@
 		&__group {
 			display: flex;
 			flex-wrap: wrap;
-
-			&:not(:last-child) {
-				margin-bottom: calc(var(--gap) * 2);
-			}
 		}
 
-		.page-kit-color-item {}
+		&__col {
+			width: 110px;
+		}
+
+		.page-kit-color-item {
+			margin-bottom: calc(var(--gap) * 2);
+		}
 	}
 </style>

@@ -1,16 +1,17 @@
 export default {
 	buildModules: [
-		'@nuxtjs/style-resources'
+		'@nuxtjs/style-resources',
 	],
-
-	styleResources: {
-		scss: [
-			// '~assets/scss/mixins.scss',
-			// '~assets/scss/variables.scss'
-		]
-	},
 
 	css: [
 		'~assets/scss/main.scss',
 	],
+
+	modules: [
+		'@nuxtjs/svg-sprite',
+	],
+
+	svgSprite: {
+		input: '~/assets/icons',
+	}
 };

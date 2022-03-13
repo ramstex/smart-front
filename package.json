@@ -1,0 +1,17 @@
+{
+	"name": "smart-menu",
+	"scripts": {
+		"dev": "nuxt",
+		"build": "nuxt build",
+		"generate": "nuxt generate",
+		"start": "nuxt start"
+	},
+	"dependencies": {
+		"nuxt": "^2.15.8"
+	},
+	"devDependencies": {
+		"@nuxtjs/style-resources": "^1.2.1",
+		"node-sass": "^6.0.1",
+		"sass-loader": "^10.2.1"
+	}
+}

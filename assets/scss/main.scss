@@ -4,3 +4,31 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+
+@import 'modules/index.scss';
+
+html {
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
+	min-height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	font-family: var(--family-primary);
+}
+
+#__nuxt {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+#__layout {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}

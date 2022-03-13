@@ -9,4 +9,8 @@ export default {
 			// '~assets/scss/variables.scss'
 		]
 	},
+
+	css: [
+		'~assets/scss/main.scss',
+	],
 };

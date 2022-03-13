@@ -1,0 +1,66 @@
+:root {
+	--family-nunito: NunitoSans, Arial, sans-serif;
+	--family-source: SourceSans, Arial, sans-serif;
+	--family-roboto: Roboto, Arial, sans-serif;
+
+	--family-primary: var(--family-nunito);
+	--family-secondary: var(--family-source);
+}
+
+@font-face {
+	font-family: NunitoSans;
+	src: url('assets/fonts/NunitoSans-Regular.eot');
+	src: url('assets/fonts/NunitoSans-Regular.ttf');
+	src: url('assets/fonts/NunitoSans-Regular.svg');
+	src: url('assets/fonts/NunitoSans-Regular.woff');
+	src: url('assets/fonts/NunitoSans-Regular.woff2');
+}
+
+@font-face {
+	font-family: NunitoSans;
+	src: url('assets/fonts/NunitoSans-Bold.eot');
+	src: url('assets/fonts/NunitoSans-Bold.ttf');
+	src: url('assets/fonts/NunitoSans-Bold.svg');
+	src: url('assets/fonts/NunitoSans-Bold.woff');
+	src: url('assets/fonts/NunitoSans-Bold.woff2');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: NunitoSans;
+	src: url('assets/fonts/NunitoSans-SemiBold.eot');
+	src: url('assets/fonts/NunitoSans-SemiBold.ttf');
+	src: url('assets/fonts/NunitoSans-SemiBold.svg');
+	src: url('assets/fonts/NunitoSans-SemiBold.woff');
+	src: url('assets/fonts/NunitoSans-SemiBold.woff2');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: SourceSans;
+	src: url('assets/fonts/SourceSansPro-Regular.eot');
+	src: url('assets/fonts/SourceSansPro-Regular.ttf');
+	src: url('assets/fonts/SourceSansPro-Regular.svg');
+	src: url('assets/fonts/SourceSansPro-Regular.woff');
+	src: url('assets/fonts/SourceSansPro-Regular.woff2');
+}
+
+@font-face {
+	font-family: SourceSans;
+	src: url('assets/fonts/SourceSansPro-Bold.eot');
+	src: url('assets/fonts/SourceSansPro-Bold.ttf');
+	src: url('assets/fonts/SourceSansPro-Bold.svg');
+	src: url('assets/fonts/SourceSansPro-Bold.woff');
+	src: url('assets/fonts/SourceSansPro-Bold.woff2');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url('assets/fonts/Roboto-Bold.eot');
+	src: url('assets/fonts/Roboto-Bold.ttf');
+	src: url('assets/fonts/Roboto-Bold.svg');
+	src: url('assets/fonts/Roboto-Bold.woff');
+	src: url('assets/fonts/Roboto-Bold.woff2');
+	font-weight: 600;
+}

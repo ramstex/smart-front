@@ -5,13 +5,6 @@
 </template>
 
 <script>
-	import '/assets/icons/arrow-down.svg';
-	import '/assets/icons/arrow-up.svg';
-	import '/assets/icons/burger.svg';
-	import '/assets/icons/like-empty.svg';
-	import '/assets/icons/like-filled.svg';
-	import '/assets/icons/logo.svg';
-
 	export default {
 		name: 'BaseIcon',
 

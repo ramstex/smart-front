@@ -1,7 +1,7 @@
 <template>
 	<div class="page-kit-typography">
 		<MarkupSection>
-			<template slot="title">Ui-Kit - Typography</template>
+			<template v-slot:title>Ui-Kit - Typography</template>
 
 			<div class="page-kit-typography__group">
 				<h1>Headline 1 (22PX)</h1>

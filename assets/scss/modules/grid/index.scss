@@ -1,3 +1,5 @@
 :root {
 	--gap: 16px;
+	--dur: .3s;
+	--trans-all: all var(--dur) ease;
 }

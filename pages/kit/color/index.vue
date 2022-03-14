@@ -1,7 +1,7 @@
 <template>
 	<div class="page-kit-color">
 		<MarkupSection>
-			<template slot="title">Ui-Kit - Color</template>
+			<template v-slot:title>Ui-Kit - Color</template>
 
 			<GridRow
 				class="page-kit-color__group"

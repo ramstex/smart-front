@@ -3,7 +3,7 @@
 		<MarkupSection>
 			<template v-slot:title>Ui-Kit - Checkbox</template>
 
-			<GridRow align="center">
+			<GridRow class="page-kit-checkbox__row" align="center">
 				<GridCol col="6">
 					<UiCheckbox v-model="checked">
 						Текст <BaseLink href="https://google.com">со ссылкой</BaseLink>
@@ -20,7 +20,7 @@
 				</GridCol>
 			</GridRow>
 
-			<GridRow align="center">
+			<GridRow class="page-kit-checkbox__row" align="center">
 				<GridCol col="6">
 					<UiCheckbox v-model="checked2">
 						Текст <BaseLink href="https://google.com">со ссылкой</BaseLink>
@@ -37,7 +37,7 @@
 				</GridCol>
 			</GridRow>
 
-			<GridRow align="center">
+			<GridRow class="page-kit-checkbox__row" align="center">
 				<GridCol col="6">
 					<UiCheckbox disabled v-model="checked3">
 						Текст <BaseLink href="https://google.com">со ссылкой</BaseLink>
@@ -92,6 +92,8 @@
 
 <style lang="scss">
 	.page-kit-checkbox {
-
+		&__row {
+			margin-bottom: var(--gap);
+		}
 	}
 </style>

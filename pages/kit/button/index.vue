@@ -29,11 +29,11 @@
 						<UiButton rounded href="/kit/color">Кнопка с внутренней ссылкой</UiButton>
 					</GridCol>
 
-					<GridCol :col="1">
+					<GridCol col="12">
 						<UiButton rounded full>Широкая кнопка</UiButton>
 					</GridCol>
 
-					<GridCol :col="1">
+					<GridCol col="12">
 						<UiButton rounded full disabled>Широкая неактивная кнопка</UiButton>
 					</GridCol>
 				</GridRow>
@@ -65,11 +65,11 @@
 						<UiButton invert small href="/kit/color">Кнопка с внутренней ссылкой</UiButton>
 					</GridCol>
 
-					<GridCol :col="1">
+					<GridCol col="12">
 						<UiButton invert small full>Широкая кнопка</UiButton>
 					</GridCol>
 
-					<GridCol :col="1">
+					<GridCol col="12">
 						<UiButton invert small full disabled>Широкая неактивная кнопка</UiButton>
 					</GridCol>
 				</GridRow>
@@ -101,11 +101,11 @@
 						<UiButton href="/kit/color">Кнопка с внутренней ссылкой</UiButton>
 					</GridCol>
 
-					<GridCol :col="1">
+					<GridCol col="12">
 						<UiButton full>Широкая кнопка</UiButton>
 					</GridCol>
 
-					<GridCol :col="1">
+					<GridCol col="12">
 						<UiButton full disabled>Широкая неактивная кнопка</UiButton>
 					</GridCol>
 				</GridRow>

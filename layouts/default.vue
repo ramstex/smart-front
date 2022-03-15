@@ -1,39 +1,23 @@
 <template>
-	<div class="layout-default">
-		<Header />
-
-		<div class="layout-default__content">
+	<MarkupLayout class="layout-default">
+		<template>
 			<nuxt />
-		</div>
-
-		<Footer />
-	</div>
+		</template>
+	</MarkupLayout>
 </template>
 
 <script>
-	import Header from '/components/header/index.vue';
-	import Footer from '/components/footer/index.vue';
+	import MarkupLayout from '/components/markup/layout/index.vue';
 
 	export default {
+		name: 'LayoutDefault',
+
 		components: {
-			Header,
-			Footer,
+			MarkupLayout,
 		},
 	}
 </script>
 
 <style lang="scss">
-	.layout-default {
-		display: flex;
-		flex-direction: column;
-		flex-grow: 1;
-
-		.header {
-
-		}
-
-		&__content {
-			flex-grow: 1;
-		}
-	}
+	.layout-default {}
 </style>

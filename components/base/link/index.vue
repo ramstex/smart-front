@@ -9,15 +9,25 @@
 	>
 		<slot />
 	</a>
+
 	<nuxt-link
 		class="base-link"
 		:class="rootClass"
-		v-else
+		v-else-if="isHref"
 		:to="href"
 		v-bind="$attrs"
 	>
 		<slot />
 	</nuxt-link>
+
+	<span
+		class="base-link"
+		:class="rootClass"
+		v-else
+		v-bind="$attrs"
+	>
+		<slot />
+	</span>
 </template>
 
 <script>
@@ -41,6 +51,10 @@
 				]
 			},
 
+			isHref() {
+				return !!this.href;
+			},
+
 			isExternal() {
 				const protocols = [
 					'http://',
@@ -49,7 +63,7 @@
 					'ftp://',
 				];
 
-				return !!protocols.find((protocol) => {
+				return this.isHref && !!protocols.find((protocol) => {
 					return this.href.indexOf(protocol) === 0;
 				});
 			},

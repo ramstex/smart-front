@@ -39,6 +39,8 @@
 	export default {
 		name: 'PageKitColor',
 
+		layout: 'kit',
+
 		components: {
 			GridRow,
 			GridCol,

@@ -123,6 +123,8 @@
 	export default {
 		name: 'pageKitButton',
 
+		layout: 'kit',
+
 		components: {
 			MarkupSection,
 			UiButton,

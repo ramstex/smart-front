@@ -57,6 +57,11 @@ export default {
 					title: 'Typography',
 					href: '/kit/typography',
 				},
+
+				{
+					title: 'Checkbox',
+					href: '/kit/checkbox',
+				},
 			],
 		};
 	},

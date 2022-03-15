@@ -10,13 +10,13 @@
 
 		props: {
 			col: {
-				type: Number,
+				type: [Number, String],
 
 				validator(value) {
 					return !value ||
 						(
-							value >= 1 &&
-							value <= 12
+							parseInt(value) >= 1 &&
+							parseInt(value) <= 12
 						);
 				},
 			},
@@ -40,7 +40,7 @@
 
 		@for $i from 1 through 12 {
 			&._col_#{$i} {
-				width: calc(100% / #{$i});
+				width: calc(#{$i} * 100% / 12);
 			}
 		}
 	}

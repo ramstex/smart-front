@@ -45,13 +45,17 @@
 				type: Boolean,
 			},
 
-			small: {
-				type: Boolean,
-			},
-
 			rounded: {
 				type: Boolean,
 			},
+
+			invert: {
+				type: Boolean,
+			},
+
+			small: {
+				type: Boolean,
+			}
 		},
 
 		computed: {
@@ -59,8 +63,9 @@
 				return [
 					{ '_full': this.full },
 					{ '_disabled': this.disabled },
-					{ '_small': this.small },
 					{ '_rounded': this.rounded },
+					{ '_invert': this.invert },
+					{ '_small': this.small },
 				];
 			},
 
@@ -77,7 +82,7 @@
 		align-items: center;
 		justify-content: center;
 		width: fit-content;
-		padding: calc(var(--gap) * 0.75) calc(var(--gap) * 1.5);
+		padding: calc(var(--gap) * 0.75 - 1px) calc(var(--gap) * 1.5);
 		border: 1px solid transparent;
 		border-radius: calc(var(--gap) / 4);
 		font-family: var(--family-primary);
@@ -98,18 +103,37 @@
 			background-color: var(--color-asphalt);
 		}
 
+		&._full {
+			width: 100%;
+		}
+
+		&._small {
+			line-height: 160%;
+			padding: calc(var(--gap) / 2 - 1px) var(--gap);
+		}
+
+		&._rounded {
+			border-radius: calc(var(--gap) * 3);
+		}
+
 		&._disabled {
 			background-color: var(--color-grey);
 			pointer-events: none;
 			user-select: none;
 		}
 
-		&._full {
-			width: 100%;
-		}
+		&._invert {
+			color: var(--color-graphite);
+			background-color: var(--color-white);
 
-		&._rounded {
-			border-radius: calc(var(--gap) * 3);
+			&:hover {
+				border-color: var(--color-grey);
+				background-color: var(--color-light-grey);
+			}
+
+			&._disabled {
+				color: var(--color-dark-grey);
+			}
 		}
 	}
 </style>
